@@ -1,8 +1,0 @@
-Pipeline{
-  agent any
-   stages{
-     stage('checkout'){
-        git '   
-     }  
-   }
-}

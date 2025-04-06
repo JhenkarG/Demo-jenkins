@@ -1,0 +1,29 @@
+Pipeline{
+  agent any
+
+   stages{
+     stage('checkout'){
+        steps{
+        git 'https://github.com/JhenkarG/Demo-jenkins.git' 
+       }
+     }
+
+      stage('buid'){
+         steps{
+         echo 'Building the code....'
+         }
+      }
+
+      stage('test'){
+         steps{
+         echo 'Testing the code'
+          }
+      }
+
+      stage('deploy'){
+         steps{
+         echo 'Deploying the code'
+         }
+      }
+   }
+}
